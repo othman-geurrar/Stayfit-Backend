@@ -1,6 +1,6 @@
 import Session from "../models/session.model.js";
 import { sendSessionNotifications } from "../utils/send-email.js";
-import ClientPack from "../models/clientPack.model.js"; // Add this import
+import ClientPack from "../models/clientpack.model.js"; // Add this import
 
 // Create session
 export const createSession = async (req, res) => {
