@@ -265,7 +265,7 @@ function generateFreeSessionRequestTemplate(options) {
     <body>
         <div class="container">
             <div class="header">
-                <img src="${company?.logoUrl || 'https://example.com/logo.png'}" alt="${company?.name || 'STAY FIT'} Logo" class="logo">
+                
                 <h1>STAY FIT</h1>
             </div>
             
