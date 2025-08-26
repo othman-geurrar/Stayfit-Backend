@@ -12,10 +12,10 @@ import { generateFreeSessionRequestTemplate } from "./freesession.template.js";
 export async function sendFreeSessionRequestEmail(userData, options = {}) {
   try {
     // Set default options if not provided
-    const adminEmail = options.adminEmail || EMAIL_COMPANY_FROM;
-    const companyInfo = options.company || {
+    const adminEmail =  EMAIL_COMPANY_FROM;
+    const companyInfo =  {
       name: EMAIL_COMPANY_NAME,
-      logoUrl: COMPANY_LOGO,
+      // logoUrl: COMPANY_LOGO,
       dashboardUrl: DASHBOARD_URL,
       address: COMPANY_ADDRESS
     };
@@ -29,7 +29,7 @@ export async function sendFreeSessionRequestEmail(userData, options = {}) {
     // Email options
     const mailOptions = {
       from: EMAIL_COMPANY_FROM,
-      to: adminEmail,
+      to: EMAIL_COMPANY_FROM,
       subject: `New Free Session Request from ${userData.name}`,
       html: htmlContent
     };
